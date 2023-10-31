@@ -68,7 +68,7 @@ void logMessage(const char *format, ...) {
 
 
 // ----------------------------------------------------------------------------------
-// . WiFi connection
+//   WiFi connection
 // ----------------------------------------------------------------------------------
 
 
@@ -184,7 +184,7 @@ void publishHomieDeviceDescription() {
   writeTopic("homie/" + deviceId + "/$state",                "init", true);
   writeTopic("homie/" + deviceId + "/$extensions",           "none", true);
   writeTopic("homie/" + deviceId + "/$homie",                "4.0.0", true);
-  writeTopic("homie/" + deviceId + "/$implementation",       "tieske.wtw.arduino 0.1", true);
+  writeTopic("homie/" + deviceId + "/$implementation",       "https://github.com/Tieske/wtw-homie", true);
   writeTopic("homie/" + deviceId + "/$name",                 "WtW CO2 aansturing", true);
   writeTopic("homie/" + deviceId + "/$nodes",                "inputs", true);
   writeTopic("homie/" + deviceId + "/inputs/$name",          "Input waarden voor CO2 aansturing", true);
